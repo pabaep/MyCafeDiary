@@ -1,18 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/ivory"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <ImageView
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:src="@drawable/logo"
+        android:layout_marginTop="150dp" />
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:backgroundTint="@color/dark_brown"
+        android:text="나의 일기"
+        android:fontFamily="@font/gyeonggi_batang"
+        android:layout_marginTop="30dp"
+        android:textSize="25dp"
+        android:textColor="@color/white"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:backgroundTint="@color/dark_brown"
+        android:text="둘러보기"
+        android:fontFamily="@font/gyeonggi_batang"
+        android:textSize="25dp"
+        android:textColor="@color/white"/>
+
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:backgroundTint="@color/gray"
+        android:text="설정"
+        android:fontFamily="@font/gyeonggi_batang"
+        android:layout_marginTop="50dp"
+        android:textSize="25dp"
+        android:textColor="@color/white"/>
+
+</LinearLayout>
