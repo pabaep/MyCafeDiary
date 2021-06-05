@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/ivory"
+    tools:context=".DiaryWriteActivity">
+    <!-- 상단바 -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/light_brown">
+        <ImageView
+            android:layout_width="60dp"
+            android:padding="10dp"
+            android:layout_height="60dp"
+            android:src="@drawable/back"
+            android:id="@+id/back_btn"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="일기 작성하기"
+            android:textSize="30dp"
+            android:layout_gravity="center"
+            android:textColor="@color/dark_brown"
+            android:fontFamily="@font/gyeonggi_batang"/>
+    </FrameLayout>
+    <!--스크롤 뷰는 항상 뭐로 감싸서 넣기-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/photo_default" />
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/gyeonggi_batang"
+                android:text="카페 이름"
+                android:textColor="@color/dark_brown"
+                android:textSize="20sp" />
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:inputType="text"
+                android:background="@color/white"
+                android:fontFamily="@font/gyeonggi_batang"
+                android:gravity="center"
+                android:hint="터치하여 입력하기"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/gyeonggi_batang"
+                android:text="방문 날짜"
+                android:textColor="@color/dark_brown"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/light_brown"
+                android:fontFamily="@font/gyeonggi_batang"
+                android:gravity="center"
+                android:text="클릭하여 날짜 넣기"
+                android:textColor="@color/dark_brown"
+                android:textSize="15sp" />
+            <!-- 공개 비공개는 일단 빼기-->
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/gyeonggi_batang"
+                android:text="주문한 메뉴"
+                android:textColor="@color/dark_brown"
+                android:textSize="20sp" />
+
+            <FrameLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gyeonggi_batang"
+                    android:gravity="left"
+                    android:lineSpacingExtra="5dp"
+                    android:padding="10dp"
+                    android:text="주문한\n메뉴들"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/gyeonggi_batang"
+                android:text="나의 일기"
+                android:textColor="@color/dark_brown"
+                android:textSize="20sp" />
+
+            <FrameLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gyeonggi_batang"
+                    android:gravity="left"
+                    android:lineSpacingExtra="5dp"
+                    android:padding="10dp"
+                    android:text="일기 내용 들어갈 자리\n일기의 내용은 다음과 같습니다."
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/gyeonggi_batang"
+                android:text="카페 위치"
+                android:textColor="@color/dark_brown"
+                android:textSize="20sp" />
+
+            <!-- 맵 관련해서는 다시 하기
+            https://developers.google.com/maps/documentation/geocoding/overview 참고-->
+            <com.google.android.gms.maps.MapView
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="50dp" />
+        </LinearLayout>
+
+    </ScrollView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="저장하기"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:fontFamily="@font/gyeonggi_batang"
+        android:background="@color/dark_brown"
+        android:textColor="@color/white"/>
+</LinearLayout>
