@@ -44,6 +44,7 @@
             <ImageView
                 android:layout_width="300dp"
                 android:layout_height="200dp"
+                android:id="@+id/img_view"
                 android:layout_gravity="center_horizontal"
                 android:src="@drawable/photo_default" />
 
@@ -59,6 +60,7 @@
             <TextView
                 android:layout_width="300dp"
                 android:layout_height="40dp"
+                android:id="@+id/name_txt"
                 android:layout_marginTop="10dp"
                 android:background="@color/white"
                 android:fontFamily="@font/gyeonggi_batang"
@@ -79,6 +81,7 @@
             <TextView
                 android:layout_width="300dp"
                 android:layout_height="40dp"
+                android:id="@+id/date_txt"
                 android:layout_marginTop="10dp"
                 android:background="@color/white"
                 android:fontFamily="@font/gyeonggi_batang"
@@ -86,6 +89,104 @@
                 android:text="방문 날짜"
                 android:textColor="@color/black"
                 android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/gyeonggi_batang"
+                android:text="장소 특징"
+                android:textColor="@color/dark_brown"
+                android:textSize="20sp" />
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:text="내부 화장실 여부"
+                    android:layout_weight="8"
+                    android:textColor="@color/gray"
+                    android:fontFamily="@font/gyeonggi_batang"
+                    android:textSize="15sp"/>
+                <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/chk_1"
+                    android:enabled="false"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/dark_brown"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="콘센트 이용가능 여부"
+                    android:layout_weight="8"
+                    android:textColor="@color/gray"
+                    android:fontFamily="@font/gyeonggi_batang"
+                    android:textSize="15sp"/>
+
+                <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/chk_2"
+                    android:enabled="false"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/dark_brown" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="주차장 여부"
+                    android:layout_weight="8"
+                    android:textColor="@color/gray"
+                    android:fontFamily="@font/gyeonggi_batang"
+                    android:textSize="15sp"/>
+                <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/chk_3"
+                    android:enabled="false"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/dark_brown"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="8"
+                    android:fontFamily="@font/gyeonggi_batang"
+                    android:layout_marginTop="5dp"
+                    android:text="테이블 개수 (n개 이상)"
+                    android:textColor="@color/gray"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/tableNum_txt"
+                    android:layout_gravity="center"
+                    android:textSize="18sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/dark_brown"
+                    android:fontFamily="@font/gyeonggi_batang"
+                    android:text="10"
+                    android:gravity="center"
+                    android:inputType="number"/>
+            </LinearLayout>
             <!-- 공개 비공개는 일단 빼기-->
             <TextView
                 android:layout_width="300dp"
@@ -105,6 +206,7 @@
                 <TextView
                     android:layout_width="300dp"
                     android:layout_height="wrap_content"
+                    android:id="@+id/menus_txt"
                     android:fontFamily="@font/gyeonggi_batang"
                     android:gravity="left"
                     android:lineSpacingExtra="5dp"
@@ -132,6 +234,7 @@
                 <TextView
                     android:layout_width="300dp"
                     android:layout_height="wrap_content"
+                    android:id="@+id/diary_txt"
                     android:fontFamily="@font/gyeonggi_batang"
                     android:gravity="left"
                     android:lineSpacingExtra="5dp"
@@ -152,23 +255,37 @@
 
             <!-- 맵 관련해서는 다시 하기
             https://developers.google.com/maps/documentation/geocoding/overview 참고-->
-            <com.google.android.gms.maps.MapView
+            <!--<com.google.android.gms.maps.MapView
                 android:layout_width="300dp"
                 android:layout_height="200dp"
-                android:layout_marginTop="10dp"/>
+                android:layout_marginTop="10dp"/>-->
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:id="@+id/loc_txt"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:fontFamily="@font/gyeonggi_batang"
+                android:gravity="center"
+                android:text="카페 위치"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
             <TextView
                 android:layout_width="300dp"
                 android:layout_height="50dp" />
         </LinearLayout>
 
     </ScrollView>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:text="수정하기"
+        android:id="@+id/delete_btn"
+        android:text="삭제하기"
         android:gravity="center"
         android:textSize="30dp"
         android:fontFamily="@font/gyeonggi_batang"
-        android:background="@color/dark_brown"
+        android:background="@color/light_red"
         android:textColor="@color/white"/>
+
 </LinearLayout>

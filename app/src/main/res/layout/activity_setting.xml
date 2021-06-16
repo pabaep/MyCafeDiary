@@ -23,6 +23,7 @@
             android:layout_height="wrap_content"
             android:text="설정"
             android:textSize="30dp"
+            android:textColor="@color/dark_brown"
             android:layout_gravity="center"
             android:fontFamily="@font/gyeonggi_batang"/>
     </FrameLayout>
@@ -31,14 +32,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="로그인 정보"
+        android:textColor="@color/dark_brown"
         android:fontFamily="@font/gyeonggi_batang"
         android:textSize="20dp"
-        android:layout_marginTop="50dp"/>
+        android:layout_marginTop="70dp"/>
 
     <TextView
         android:layout_width="300dp"
         android:layout_height="50dp"
+        android:id="@+id/email_txt"
         android:text="로그인 이메일"
+        android:textColor="@color/dark_brown"
         android:fontFamily="@font/gyeonggi_batang"
         android:textSize="15dp"
         android:background="@color/light_brown"
@@ -49,25 +53,19 @@
     <Button
         android:layout_width="200dp"
         android:layout_height="50dp"
+        android:id="@+id/info_btn"
         android:backgroundTint="@color/dark_brown"
         android:text="도움말"
         android:fontFamily="@font/gyeonggi_batang"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="80dp"
         android:textSize="20dp"
         android:textColor="@color/white"/>
+
 
     <Button
         android:layout_width="200dp"
         android:layout_height="50dp"
-        android:backgroundTint="@color/dark_brown"
-        android:text="이용약관"
-        android:fontFamily="@font/gyeonggi_batang"
-        android:textSize="20dp"
-        android:textColor="@color/white"/>
-
-    <Button
-        android:layout_width="200dp"
-        android:layout_height="50dp"
+        android:id="@+id/pri_btn"
         android:backgroundTint="@color/dark_brown"
         android:text="개인정보정책"
         android:fontFamily="@font/gyeonggi_batang"
@@ -76,6 +74,7 @@
     <Button
         android:layout_width="200dp"
         android:layout_height="50dp"
+        android:id="@+id/contact_btn"
         android:backgroundTint="@color/dark_brown"
         android:text="문의하기"
         android:fontFamily="@font/gyeonggi_batang"
@@ -84,6 +83,7 @@
     <Button
         android:layout_width="200dp"
         android:layout_height="50dp"
+        android:id="@+id/signOut_btn"
         android:backgroundTint="@color/gray"
         android:text="로그아웃"
         android:fontFamily="@font/gyeonggi_batang"
@@ -93,6 +93,7 @@
     <Button
         android:layout_width="200dp"
         android:layout_height="50dp"
+        android:id="@+id/withdrawal_btn"
         android:backgroundTint="@color/light_red"
         android:text="탈퇴하기"
         android:fontFamily="@font/gyeonggi_batang"

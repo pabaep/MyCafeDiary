@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "600764283060",
+    "project_id": "mycafediary-4c855",
+    "storage_bucket": "mycafediary-4c855.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:600764283060:android:d9bd80abe4ef73fd4a7fe1",
+        "android_client_info": {
+          "package_name": "com.example.mycafediary"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "600764283060-38ros4pregddjgef1c41ipnlj9oec8cu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mycafediary",
+            "certificate_hash": "3d15a01a8be35e2d80bd9676d79f9810a559196d"
+          }
+        },
+        {
+          "client_id": "600764283060-k4a3cntjbsbdlv2plaj059app7ltve4n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFpN9xRPYTu9BihoiyWSRpU_Mi5LegZwU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "600764283060-k4a3cntjbsbdlv2plaj059app7ltve4n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

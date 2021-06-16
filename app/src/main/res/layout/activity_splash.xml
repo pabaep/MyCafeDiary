@@ -23,6 +23,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|center_horizontal"
             android:layout_marginBottom="20dp"
+            android:textColor="@color/gray"
             android:fontFamily="@font/gyeonggi_batang"
             android:text="Copyright 2021. MyCafeDiary. all rights reserved." />
     </FrameLayout>

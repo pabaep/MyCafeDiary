@@ -16,6 +16,7 @@
     <Button
         android:layout_width="200dp"
         android:layout_height="70dp"
+        android:id="@+id/mydiary_btn"
         android:backgroundTint="@color/dark_brown"
         android:text="나의 일기"
         android:fontFamily="@font/gyeonggi_batang"
@@ -23,23 +24,25 @@
         android:textSize="25dp"
         android:textColor="@color/white"/>
 
-    <Button
+    <!-- 일단 둘러보기는 빼기 -->
+    <!--Button
         android:layout_width="200dp"
         android:layout_height="70dp"
         android:backgroundTint="@color/dark_brown"
         android:text="둘러보기"
         android:fontFamily="@font/gyeonggi_batang"
         android:textSize="25dp"
-        android:textColor="@color/white"/>
+        android:textColor="@color/white"/-->
 
 
     <Button
         android:layout_width="200dp"
         android:layout_height="70dp"
+        android:id="@+id/setting_btn"
         android:backgroundTint="@color/gray"
         android:text="설정"
         android:fontFamily="@font/gyeonggi_batang"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:textSize="25dp"
         android:textColor="@color/white"/>
 
