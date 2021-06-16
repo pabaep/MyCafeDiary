@@ -44,6 +44,7 @@
             <ImageView
                 android:layout_width="300dp"
                 android:layout_height="200dp"
+                android:id="@+id/img_btn"
                 android:layout_gravity="center_horizontal"
                 android:src="@drawable/photo_default" />
 
@@ -59,6 +60,7 @@
             <EditText
                 android:layout_width="300dp"
                 android:layout_height="40dp"
+                android:id="@+id/cafename_txt"
                 android:layout_marginTop="10dp"
                 android:inputType="text"
                 android:background="@color/white"
@@ -81,6 +83,7 @@
             <TextView
                 android:layout_width="300dp"
                 android:layout_height="40dp"
+                android:id="@+id/cal_view"
                 android:layout_marginTop="10dp"
                 android:background="@color/light_brown"
                 android:fontFamily="@font/gyeonggi_batang"
@@ -88,6 +91,97 @@
                 android:text="클릭하여 날짜 넣기"
                 android:textColor="@color/dark_brown"
                 android:textSize="15sp" />
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/gyeonggi_batang"
+                android:text="장소 특징"
+                android:textColor="@color/dark_brown"
+                android:textSize="20sp" />
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:text="내부 화장실 여부"
+                    android:layout_weight="8"
+                    android:textColor="@color/gray"
+                    android:fontFamily="@font/gyeonggi_batang"
+                    android:textSize="15sp"/>
+                <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/plc1_check"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/dark_brown"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="콘센트 이용가능 여부"
+                    android:layout_weight="8"
+                    android:textColor="@color/gray"
+                    android:fontFamily="@font/gyeonggi_batang"
+                    android:textSize="15sp"/>
+
+                <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/plc2_check"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/dark_brown" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="주차장 여부"
+                    android:layout_weight="8"
+                    android:textColor="@color/gray"
+                    android:fontFamily="@font/gyeonggi_batang"
+                    android:textSize="15sp"/>
+                <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/plc3_check"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/dark_brown"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="8"
+                    android:fontFamily="@font/gyeonggi_batang"
+                    android:layout_marginTop="5dp"
+                    android:text="테이블 개수 (n개 이상) "
+                    android:textColor="@color/gray"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/plc4_txt"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:textSize="12sp" />
+            </LinearLayout>
             <!-- 공개 비공개는 일단 빼기-->
             <TextView
                 android:layout_width="300dp"
@@ -98,23 +192,17 @@
                 android:textColor="@color/dark_brown"
                 android:textSize="20sp" />
 
-            <FrameLayout
+            <EditText
                 android:layout_width="300dp"
-                android:layout_height="wrap_content"
+                android:layout_height="100dp"
+                android:id="@+id/menu_txt"
                 android:layout_marginTop="10dp"
-                android:background="@color/white">
-
-                <TextView
-                    android:layout_width="300dp"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/gyeonggi_batang"
-                    android:gravity="left"
-                    android:lineSpacingExtra="5dp"
-                    android:padding="10dp"
-                    android:text="주문한\n메뉴들"
-                    android:textColor="@color/black"
-                    android:textSize="15sp" />
-            </FrameLayout>
+                android:background="@color/white"
+                android:fontFamily="@font/gyeonggi_batang"
+                android:gravity="center"
+                android:hint="터치 하여 입력하기"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
 
             <TextView
                 android:layout_width="300dp"
@@ -125,23 +213,17 @@
                 android:textColor="@color/dark_brown"
                 android:textSize="20sp" />
 
-            <FrameLayout
+            <EditText
                 android:layout_width="300dp"
-                android:layout_height="wrap_content"
+                android:layout_height="200dp"
+                android:id="@+id/diary_detail_txt"
                 android:layout_marginTop="10dp"
-                android:background="@color/white">
-
-                <TextView
-                    android:layout_width="300dp"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/gyeonggi_batang"
-                    android:gravity="left"
-                    android:lineSpacingExtra="5dp"
-                    android:padding="10dp"
-                    android:text="일기 내용 들어갈 자리\n일기의 내용은 다음과 같습니다."
-                    android:textColor="@color/black"
-                    android:textSize="15sp" />
-            </FrameLayout>
+                android:background="@color/white"
+                android:fontFamily="@font/gyeonggi_batang"
+                android:gravity="center"
+                android:hint="터치 하여 입력하기"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
 
             <TextView
                 android:layout_width="300dp"
@@ -154,10 +236,21 @@
 
             <!-- 맵 관련해서는 다시 하기
             https://developers.google.com/maps/documentation/geocoding/overview 참고-->
-            <com.google.android.gms.maps.MapView
+            <!--<com.google.android.gms.maps.MapView
                 android:layout_width="300dp"
                 android:layout_height="200dp"
-                android:layout_marginTop="10dp"/>
+                android:layout_marginTop="10dp"/>-->
+            <EditText
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:id="@+id/location_txt"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:fontFamily="@font/gyeonggi_batang"
+            android:gravity="center"
+            android:hint="터치 하여 입력하기"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
             <TextView
                 android:layout_width="300dp"
                 android:layout_height="50dp" />
@@ -167,6 +260,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="60dp"
+        android:id="@+id/save_btn"
         android:text="저장하기"
         android:gravity="center"
         android:textSize="30dp"

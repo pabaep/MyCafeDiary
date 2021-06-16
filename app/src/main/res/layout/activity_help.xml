@@ -23,9 +23,37 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="도움말"
+            android:textColor="@color/dark_brown"
             android:textSize="30dp"
             android:layout_gravity="center"
             android:fontFamily="@font/gyeonggi_batang"/>
     </FrameLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dark_brown"
+            android:textSize="20sp"
+            android:padding="30dp"
+            android:lineSpacingExtra="5dp"
+            android:text="나의 카페 일기를 이용해주셔서 감사합니다.\n어플리케이션 화면 별 안내사항은 다음과 같습니다.\n\n로그인 화면\n\n
+로그인 : 구글 로그인을 지원합니다.\n
+문의하기 : 관리자에게 메일을 보낼수 있습니다.\n\n메인화면\n\n
+나의 일기 : 지금까지 작성한 일기의 목록이 나옵니다.\n
+설정 : 설정 화면으로 이동합니다.\n\n나의 일기 목록\n\n
+일기 목록 : 작성한 일기의 미리보기가 나옵니다. 누르면 해당하는 일기의 상세 내용을 확인할 수 있습니다.\n
+글쓰기 : 일기를 작성하는 화면으로 넘어갑니다.\n\n일기 작성하기\n\n
+PHOTO : 클릭 시 갤러리로 이동합니다.\n
+방문 날짜 : 클릭 시 달력에서 날짜를 선택할 수 있습니다.\n
+저장하기 : 눌러서 일기를 저장합니다.\n\n설정\n\n
+로그인 정보 : 현재 로그인한 구글 계정을 확인할 수 있습니다.\n
+도움말 : 도움말 페이지로 이동합니다.\n
+문의하기 : 관리자에게 메일을 보낼수 있습니다.\n
+로그아웃 : 눌러서 로그아웃 합니다.
+탈퇴하기 : 눌러서 계정을 삭제 합니다. 계정 삭제시 계정의 정보는 모두 삭제되며, 복구되지 않습니다.\n"
+            android:fontFamily="@font/gyeonggi_batang"/>
+    </ScrollView>
 
 </LinearLayout>
