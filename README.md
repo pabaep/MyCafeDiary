@@ -11,7 +11,7 @@
   * 일기 작성하기   
 
 * 기타 : 
-  안드로이드와 파이어베이스 연결을 공부하기 위해 혼자 진행한 공부용 프로젝트  
+  안드로이드(Kotiln)와 파이어베이스 연결을 공부하기 위해 혼자 진행한 공부용 프로젝트  
   
 * Firebase 구성   
   <img width="70%" src="https://user-images.githubusercontent.com/55613591/135265178-cb5f5c98-4809-47ad-9c70-179510db1fb2.png"/>   
